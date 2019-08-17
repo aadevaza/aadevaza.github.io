@@ -1,0 +1,86 @@
+.popup{
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+
+  &__inner {
+    margin: 200px auto 0 auto;
+    max-width: 606px;
+    padding: 10px;
+    background-color: #2A2A47;
+    border-radius: 5px;
+    z-index: 99;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__form-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    label {
+      font-size: 15px;
+      color: #00f0ff;
+      margin: 5px 0;
+      border-radius: 5px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+  }
+  &__btn {
+    margin-top: 10px;
+    background-color: #00F0FF;
+
+    font-size: 20px;
+    padding:  10px 0;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  &__btn-span {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      background: url('../img/arrow.png') no-repeat;
+      width: 32px;
+      height: 32px;
+      left: -33px;
+      top: -5px;
+    }
+  }
+  &__close {
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: underline;
+    color: #ffffff;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .popup {
+    &__inner {
+      display: flex;
+      padding: 44px;
+    }
+    &__form {
+      margin-left: 20px;
+      max-width: 316px;
+      width: 100%;
+    }
+  }
+  #teleg {
+    width: 100%;
+  }
+}

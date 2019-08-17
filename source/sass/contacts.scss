@@ -1,0 +1,95 @@
+.contacts {
+  padding: 20px;
+  &__telegram {
+    max-width: 266px;
+  }
+  &__img {
+    margin-top: 30px;
+    width: 50px;
+    height: 50px;
+  }
+  &__title {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ffffff;
+    margin: 0;
+    margin-top: 5px;
+  }
+  &__text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #7a7a7a;
+    margin: 0;
+  }
+  &__copy {
+    color: #7a7a7a;
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 211px;
+    margin: 0;
+    margin-top: 30px;
+  }
+  &__item {
+    color: #ffffff;
+    font-size: 17px;
+    padding-left: 20px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      top: 8px;
+      left: 0;
+      background: url('../img/flag.svg') no-repeat;
+    }
+  }
+  &__email-text {
+    color: #7a7a7a;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+  &__link {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  &__garant {
+    margin-top: 40px;
+  }
+  &__email {
+    margin-top: 30px;
+  }
+  &__email-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    display: flex;
+    max-width: 1080px;
+    margin: 0 auto;
+    justify-content: space-between;
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__telegram {
+      margin-right: 20px;
+    }
+    &__garant {
+      margin-top: 100px;
+      margin-right: 30px;
+    }
+    &__email {
+      margin-top: 30px;
+    }
+
+    &__email-text {
+      margin-right: 10px;
+    }
+  }
+}

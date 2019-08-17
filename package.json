@@ -1,0 +1,24 @@
+{
+  "name": "Gram",
+  "version": "1.0.0",
+  "description": "Gram Invest",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp css",
+    "start": "gulp start"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "dependencies": {
+    "jquery-circle-progress": "^1.2.2"
+  }
+}
